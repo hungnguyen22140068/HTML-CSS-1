@@ -1,0 +1,35 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  padding: 0 35px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%;
+  border-radius: 8px;
+  color: #032e32;
+  background: #b5ed3d;
+  user-select: none;
+  transition: opacity 0.5s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--text,
+  &--signup {
+    height: 50px;
+    padding: 0 22px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 175%;
+    background: transparent;
+  }
+
+  &--signup {
+    border-radius: 6px;
+    color: #fff;
+    background: #032e32;
+  }
+}

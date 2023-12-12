@@ -1,1 +1,43 @@
-<h2>nguyễn thành hưng</h2>
+<div class="container">
+  <div class="top-bar">
+    <!-- More -->
+    <label for="navbar__checkbox" class="top-bar__more d-none d-lg-block">
+      <img src="./assets/icons/more.svg" alt="" class="top-bar__more-icon" />
+    </label>
+
+    <!-- Logo -->
+    <a href="./" class="logo top-bar__logo">
+      <img src="./assets/icons/logo.svg" alt="" class="logo__img top-bar__logo-img" />
+      <h1 class="logo__title top-bar__logo-title">circuit</h1>
+    </a>
+
+    <!-- Checkbox -->
+    <input type="checkbox" name="" id="navbar__checkbox" class="navbar__checkbox" hidden />
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="./" class="logo navbar__logo d-none d-lg-flex">
+        <img src="./assets/icons/logo.svg" alt="" class="logo__img top-bar__logo-img" />
+        <h1 class="logo__title top-bar__logo-title">circuit</h1>
+      </a>
+      <ul class="navbar__list">
+        <li class="navbar__item"><a href="#!" class="navbar__link navbar__link--active" title="Home">Home</a></li>
+        <li class="navbar__item"><a href="#!" class="navbar__link" title="About">About us</a></li>
+        <li class="navbar__item"><a href="#!" class="navbar__link" title="Resources">Resources</a></li>
+        <li class="navbar__item"><a href="#!" class="navbar__link" title="Contact">Contact</a></li>
+        <li class="navbar__item">
+          <a href="#!" class="navbar__link d-none d-md-block" title="Log In">Log In</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Overlay -->
+    <label for="navbar__checkbox" class="navbar__overlay"></label>
+
+    <!-- Action -->
+    <div class="top-act">
+      <a href="#!" class="btn btn--text top-act__login d-md-none">Log In</a>
+      <a href="#!" class="btn btn--signup top-act__signup">Sign Up</a>
+    </div>
+  </div>
+</div>
