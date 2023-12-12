@@ -10,8 +10,8 @@
     align-items: center;
     height: 70px;
     white-space: nowrap;
-    translate: -66px;
     animation: animate 20s linear infinite;
+    animation-fill-mode: forwards;
 
     @include abstracts.screen(md) {
       height: 50px;
