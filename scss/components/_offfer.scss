@@ -1,0 +1,39 @@
+@use "../abstracts";
+
+.offer {
+  width: 100%;
+  background: #ffcd00;
+  overflow: hidden;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    white-space: nowrap;
+    translate: -66px;
+    animation: animate 20s linear infinite;
+
+    @include abstracts.screen(md) {
+      height: 50px;
+    }
+  }
+
+  &__text {
+    width: 546px;
+    font-size: 1.8rem;
+    line-height: 166.667%;
+
+    @include abstracts.screen(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__dot {
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0 18px;
+    border-radius: 50%;
+    background: #032e32;
+  }
+}
