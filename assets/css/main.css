@@ -1292,7 +1292,7 @@ select {
 }
 @keyframes animate {
   0% {
-    translate: 100%;
+    translate: 100vw;
   }
   100% {
     translate: -100%;
