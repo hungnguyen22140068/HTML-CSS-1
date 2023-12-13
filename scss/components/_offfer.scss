@@ -2,24 +2,29 @@
 
 .offer {
   width: 100%;
-  background: #ffcd00;
   overflow: hidden;
+  background: #ffcd00;
 
   &__inner {
     display: flex;
     align-items: center;
     height: 70px;
-    white-space: nowrap;
-    animation: animate 20s linear infinite;
-    animation-fill-mode: forwards;
 
     @include abstracts.screen(md) {
       height: 50px;
     }
   }
 
+  &__animation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+    animation: animate 20s linear infinite;
+  }
+
   &__text {
-    width: 546px;
+    flex-shrink: 0;
     font-size: 1.8rem;
     line-height: 166.667%;
 
