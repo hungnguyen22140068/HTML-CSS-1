@@ -1,26 +1,26 @@
 @use "../abstracts";
 
-.offer {
-  width: 100%;
+.slides {
+  display: flex;
+  align-items: center;
+  height: 70px;
   overflow: hidden;
   background: #ffcd00;
+  white-space: nowrap;
+
+  &:hover &__inner {
+    animation-play-state: paused;
+  }
 
   &__inner {
     display: flex;
     align-items: center;
-    height: 70px;
+    animation: slide 20s linear infinite;
+    height: 100%;
 
     @include abstracts.screen(md) {
       height: 50px;
     }
-  }
-
-  &__animation {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    white-space: nowrap;
-    animation: animate 20s linear infinite;
   }
 
   &__text {
