@@ -1,0 +1,143 @@
+.hero {
+  padding: 100px 0 156px;
+  background: #e0eae5;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__heading {
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 114.286%;
+  }
+
+  &__desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    line-height: 166.667%;
+  }
+
+  &__act {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+
+    &-submit {
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__input-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  &__input-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+  }
+
+  &__input-text {
+    width: 100%;
+
+    &::placeholder {
+      font-size: 1.8rem;
+      line-height: 166.667%;
+      color: #69797a;
+    }
+  }
+
+  &__media {
+    position: relative;
+  }
+
+  &__eclip {
+    width: 570px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 370px;
+    height: 426px;
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+
+    &-wrap {
+      position: relative;
+    }
+
+    &-img {
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    &-btn {
+      position: absolute;
+      left: 50%;
+      bottom: -11%;
+      translate: -50%;
+      cursor: pointer;
+    }
+
+    &-desc {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      line-height: 171.429%;
+      color: #69797a;
+    }
+
+    &-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 3px;
+    }
+
+    &-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 175%;
+    }
+
+    &-price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 166.667%;
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 3px;
+    }
+
+    &-numb {
+      font-size: 1.6rem;
+      color: #69797a;
+      line-height: 175%;
+    }
+
+    &-start {
+      width: 16px;
+      height: 16px;
+      object-fit: cover;
+    }
+  }
+}

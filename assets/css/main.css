@@ -167,6 +167,8 @@ textarea,
 select {
   font-family: inherit;
   color: inherit;
+  border: none;
+  outline: none;
 }
 
 .row > *, .container-fluid, .container {
@@ -1498,6 +1500,11 @@ select {
 .slides:hover .slides__inner {
   animation-play-state: paused;
 }
+.slides-sticky {
+  position: sticky;
+  top: 106px;
+  z-index: 99;
+}
 .slides__inner {
   display: flex;
   align-items: center;
@@ -1526,6 +1533,128 @@ select {
   margin: 0 18px;
   border-radius: 50%;
   background: #032e32;
+}
+
+.hero {
+  padding: 100px 0 156px;
+  background: #e0eae5;
+}
+.hero__inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero__heading {
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 114.286%;
+}
+.hero__desc {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  line-height: 166.667%;
+}
+.hero__act {
+  display: flex;
+  gap: 18px;
+  margin-top: 40px;
+}
+.hero__act-submit {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.hero__input-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+.hero__input-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+.hero__input-text {
+  width: 100%;
+}
+.hero__input-text::placeholder {
+  font-size: 1.8rem;
+  line-height: 166.667%;
+  color: #69797a;
+}
+.hero__media {
+  position: relative;
+}
+.hero__eclip {
+  width: 570px;
+  height: 250px;
+  object-fit: cover;
+}
+.hero__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 370px;
+  height: 426px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+}
+.hero__card-wrap {
+  position: relative;
+}
+.hero__card-img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+.hero__card-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -11%;
+  translate: -50%;
+  cursor: pointer;
+}
+.hero__card-desc {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  line-height: 171.429%;
+  color: #69797a;
+}
+.hero__card-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+.hero__card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 175%;
+}
+.hero__card-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 166.667%;
+}
+.hero__card-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+}
+.hero__card-numb {
+  font-size: 1.6rem;
+  color: #69797a;
+  line-height: 175%;
+}
+.hero__card-start {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

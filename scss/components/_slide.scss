@@ -12,6 +12,12 @@
     animation-play-state: paused;
   }
 
+  &-sticky {
+    position: sticky;
+    top: 106px;
+    z-index: 99;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
